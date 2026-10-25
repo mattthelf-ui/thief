@@ -1,3 +1,14 @@
 <!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
-<meta name="theme-color" content="#05070c"><title>Night Shift</title>
-<style>html,body{margin:0;height:100%;background:#05070c;overflow:hidden;touch-action:none;user-select:none;-webkit-user-select:none;font-family:system-ui,sans-serif}canvas{display:block;width:100vw;height:100vh}</style></head><body><canvas id="c"></canvas><script src="game.js"></script></body></html>
+<meta name="theme-color" content="#0b1020"><title>Night Shift</title>
+<link rel="stylesheet" href="style.css"></head><body>
+<canvas id="c"></canvas><div id="vig"></div><div id="alarmfx"></div>
+<div id="hud">
+ <div id="tl"><div id="gem"><div id="gemcore"></div></div><div><div id="gemlbl">HIDDEN</div><div id="meter"><div id="meterfill"></div></div></div></div>
+ <div id="tr"><div id="haul">$0</div><div id="wt">bag 0 kg</div><div id="debt"></div></div>
+ <div id="timer"></div><div id="msg"></div>
+ <div id="cross"></div><div id="prompt"><div id="ptxt"></div><div id="pbar"><div id="pfill"></div></div></div>
+ <div id="stickbase"><div id="stickknob"></div></div>
+ <div id="bsprint" class="btn">RUN</div><div id="buse" class="btn">USE</div>
+</div>
+<div id="screen"></div>
+<script type="module" src="game.js"></script></body></html>

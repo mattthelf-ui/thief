@@ -1,0 +1,28 @@
+html,body{margin:0;height:100%;background:#0b1020;overflow:hidden;touch-action:none;user-select:none;-webkit-user-select:none;font-family:system-ui,-apple-system,sans-serif;color:#e8e2d4}
+canvas{display:block;position:fixed;inset:0;width:100vw;height:100vh}
+#vig{position:fixed;inset:0;pointer-events:none;background:radial-gradient(ellipse at center,rgba(0,0,0,0) 55%,rgba(0,0,0,.55) 100%)}
+#alarmfx{position:fixed;inset:0;pointer-events:none;opacity:0;box-shadow:inset 0 0 90px 30px rgba(220,30,30,.8)}
+#hud{position:fixed;inset:0;pointer-events:none;display:none}
+#tl{position:absolute;left:calc(12px + env(safe-area-inset-left));top:calc(12px + env(safe-area-inset-top));display:flex;gap:10px;align-items:center}
+#gem{width:38px;height:38px;border-radius:50%;background:#111;border:2px solid rgba(230,210,160,.6);display:flex;align-items:center;justify-content:center;transform:rotate(45deg);border-radius:6px}
+#gemcore{width:24px;height:24px;border-radius:4px;background:#333}
+#gemlbl{font-size:11px;letter-spacing:2px;font-weight:700;text-shadow:0 1px 3px #000}
+#meter{width:110px;height:7px;background:rgba(0,0,0,.6);border:1px solid rgba(255,255,255,.25);border-radius:4px;margin-top:5px;overflow:hidden}
+#meterfill{height:100%;width:0;background:linear-gradient(90deg,#e8c25a,#e0453a)}
+#tr{position:absolute;right:calc(12px + env(safe-area-inset-right));top:calc(12px + env(safe-area-inset-top));text-align:right;text-shadow:0 1px 3px #000}
+#haul{font-size:20px;font-weight:700;color:#f0d68a}#wt,#debt{font-size:11px;opacity:.85}#debt{color:#e0a59a}
+#timer{position:absolute;top:calc(56px + env(safe-area-inset-top));left:0;right:0;text-align:center;font-size:28px;font-weight:800;color:#ff5a4a;text-shadow:0 0 12px #f00}
+#msg{position:absolute;top:34%;left:0;right:0;text-align:center;font-size:16px;font-weight:600;text-shadow:0 2px 6px #000;transition:opacity .3s}
+#cross{position:absolute;left:50%;top:50%;width:6px;height:6px;margin:-3px;border-radius:50%;background:rgba(255,255,255,.55)}
+#prompt{position:absolute;left:0;right:0;top:57%;text-align:center;display:none;text-shadow:0 1px 4px #000;font-size:14px;font-weight:600}
+#pbar{width:140px;height:6px;margin:6px auto 0;background:rgba(0,0,0,.6);border-radius:3px;overflow:hidden}#pfill{height:100%;width:0;background:#f0d68a}
+#stickbase{position:absolute;width:110px;height:110px;margin:-55px;border-radius:50%;border:2px solid rgba(255,255,255,.25);background:rgba(255,255,255,.05);display:none}
+#stickknob{position:absolute;left:50%;top:50%;width:46px;height:46px;margin:-23px;border-radius:50%;background:rgba(255,255,255,.35)}
+.btn{position:absolute;pointer-events:auto;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;letter-spacing:1px;border:2px solid rgba(240,214,138,.7);background:rgba(20,20,30,.45);color:#f0d68a}
+.btn.on{background:rgba(240,214,138,.45);color:#111}
+#buse{width:84px;height:84px;right:calc(22px + env(safe-area-inset-right));bottom:calc(28px + env(safe-area-inset-bottom));font-size:17px}
+#bsprint{width:64px;height:64px;right:calc(120px + env(safe-area-inset-right));bottom:calc(22px + env(safe-area-inset-bottom));font-size:14px}
+#screen{position:fixed;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;background:rgba(5,7,14,.55);padding:20px}
+#screen h1{font-weight:300;letter-spacing:8px;font-size:44px;margin:0;color:#e6d3a8}
+#screen .s{opacity:.8;margin:8px}#screen .tap{margin-top:36px;animation:p 1.6s infinite}@keyframes p{50%{opacity:.35}}
+#screen .hint{position:absolute;bottom:24px;left:16px;right:16px;font-size:12px;opacity:.6}
